@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".InformationActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_information_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="#FFFFFF"/>
+
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is Surya Namaskar? "
+            android:textColor="@color/Green"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_information_activity" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Heading"
+            android:textColor="@color/black"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="In Sanskrit, surya means sun and namaskar means greeting or salutation. Surya Namaskar is then a greeting to the sun! It is an ancient ritual of twelve steps that warms up the body preparing it for yoga practice. That is why it is practiced at the beginning of a yoga class. This warming sequence has a rich history and holistic benefits for the body and mind. Read more to find out about this widely known and ancient yoga practice! "/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toTopOf="@id/Heading2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:dividerColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/Heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benefits of Surya Namaskar"
+            android:textColor="@color/Green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/info" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Heading2"
+            android:textColor="@color/black"
+            android:paddingHorizontal="20dp"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:text=" 1.Helps with weight loss \n\n 2.Strengthens muscles and joints \n\n 3.Improved complexion \n\n 4.Ensures a better functioning digestive system \n\n 5.Helps combat insomnia \n\n 6.Ensures regular menstrual cycle \n\n 7.Useful in treatment of frozen shoulders \n\n 8.Internal organs are massaged \n\n 9.Improves flexibility of the hips"/>
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toTopOf="@id/Heading3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:dividerColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/Heading3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps to perform Surya Namaskar"
+            android:textColor="@color/Green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/info2" />
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Heading3"
+            android:textColor="@color/black"
+            android:paddingHorizontal="20dp"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:text="1. Pranamasana (Prayer pose) \n\n2. Hastauttanasana (Raised arms pose) \n\n3. Hastapadasana (Standing forward bend) \n\n4. Ashwa Sanchalanasana (Equestrian pose) \n\n5. Dandasana (Stick pose) \n\n6. Ashtanga Namaskara (Salute with 8 parts) \n\n7. Bhujangasana (Cobra pose) \n\n8. Adho Mukha Svanasana (Downward facing) \n\n9. Ashwa Sanchalanasana (Equestrian pose) \n\n10. Hastapadasana (Standing forward bend) \n\n11. Hastauttanasana (Raised arms pose) \n\n12. Tadasana (Mountain Pose)\n" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
